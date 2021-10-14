@@ -9,6 +9,10 @@ It is simply using `VendorPublishCommand.php` and `VendorTagPublished.php` from 
 
 ## Installation
 
+```
+composer require steve-moretz/lumen-vendor-publish-command
+```
+
 ## Usage
 
 ### Automatic
@@ -17,11 +21,9 @@ use https://github.com/LaraPKG/lumen-discovery for adding auto-discovery to your
 
 ### Manual
 
-Add the service provider to the list of your commands in app/Console/Kernel.php
+Register the service provider in bootstrap/app.php of your Lumen installation
 ```php
-protected $commands = [
-    \Illuminate\Foundation\Console\VendorPublishCommand::class
-];
+$app->register(\SteveMoretz\LumenVendorPublish\Laravel\app\Providers\ServiceProvider::class);
 ```
 
 ## Contributing
