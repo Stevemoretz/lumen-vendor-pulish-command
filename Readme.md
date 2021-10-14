@@ -11,7 +11,7 @@ It is simply using `VendorPublishCommand.php` and `VendorTagPublished.php` from 
 
 ## Usage
 
-###Automatic
+### Automatic
 
 use https://github.com/LaraPKG/lumen-discovery for adding auto-discovery to your lumen, so you won't have to do any manual Service Provider Registry for any package!
 
