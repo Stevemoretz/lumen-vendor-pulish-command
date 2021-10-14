@@ -7,8 +7,7 @@ Install and configure to get it added to your artisan commands list!
 It is simply using `VendorPublishCommand.php` and `VendorTagPublished.php` from Laravel Framework itself.
 
 
-## Installation```
-```
+## Installation
 
 ## Usage
 
@@ -16,13 +15,11 @@ It is simply using `VendorPublishCommand.php` and `VendorTagPublished.php` from 
 
 use https://github.com/LaraPKG/lumen-discovery for adding auto-discovery to your lumen, so you won't have to do any manual Service Provider Registry for any package!
 
-###Manual
+### Manual
 
 Add the service provider to the list of your commands in app/Console/Kernel.php
-
-```
+```php
 protected $commands = [
-    //...
     \Illuminate\Foundation\Console\VendorPublishCommand::class
 ];
 ```
