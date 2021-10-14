@@ -1,0 +1,26 @@
+{
+    "name": "steve-moretz/lumen-vendor-publish-command",
+    "description": "The lost vendor:publish command for Lumen!",
+    "autoload": {
+        "psr-4": {
+            "SteveMoretz\\LumenVendorPublish\\": "src/"
+        },
+        "files": [
+            "src/index.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "sm.steve.moretz",
+            "email": "sm.steve.moretz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SteveMoretz\\LumenVendorPublish\\Laravel\\app\\Providers\\ServiceProvider"
+            ]
+        }
+    }}
